@@ -1,0 +1,50 @@
+{
+  "extends": "ts-config",
+  "rules": {
+    "ordered-imports": true,
+    "no-empty": {
+      "options": "allow-empty-functions"
+    },
+    "interface-over-type-literal": false,
+    "no-non-null-assertion": false,
+    "no-inferrable-types": false,
+    "file-name-casing": [
+      false,
+      "kebab-case"
+    ],
+    "curly": {
+      "options": "ignore-same-line"
+    },
+    "variable-name": {
+      "options": "allow-leading-underscore"
+    },
+    "no-unused-expression": {
+      "options": "allow-fast-null-checks"
+    },
+    "member-ordering": {
+      "options": {
+        "order": [
+          "public-static-field",
+          "protected-static-field",
+          "private-static-field",
+          "public-instance-field",
+          "protected-instance-field",
+          "private-instance-field",
+          "constructor",
+          "public-static-method",
+          "protected-static-method",
+          "private-static-method",
+          "public-instance-method",
+          "protected-instance-method",
+          "private-instance-method"
+        ]
+      }
+    }
+  },
+  "linterOptions": {
+    "exclude": [
+      "**/lib/**",
+      "**/node_modules/**"
+    ]
+  }
+}
